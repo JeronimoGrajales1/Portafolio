@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Knewave&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Knewave&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* Header General */
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los contenedores */
+  align-items: center; /* Centra verticalmente */
+  padding: 20px 40px;
+  background-color: #333; 
+  color: white;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+/* Icono y nombre */
+.icon-container {
+  display: flex;
+  align-items: center; /* Alinea la imagen y el texto verticalmente */
+  gap: 25px; /* Espacio entre la imagen y el texto */
+}
+
+.circle-icon {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #FFFFFF; 
+}
+
+.name-container {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+}
+
+/* Menú de navegación */
+.nav-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  flex-grow: 1;
+}
+
+.barra-lista {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Espaciado uniforme entre enlaces */
+  padding: 0;
+  margin: 0;
+}
+
+.barra-lista li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.barra-lista li a:hover {
+  color: #7c57c2;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto; /* Permite ajuste dinámico */
+    gap: 20px;
+  }
+
+  .barra-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.header-image {
+  width: 100%; /* Opción para que ocupe todo el ancho */
+  height: 300px; /* Altura fija */
+  margin-top: 250px; /* Separación entre el header y la imagen */
+  margin-left: 70px;
+}
+
+.header-img {
+  width: 25%; 
+  height: auto; /* Mantiene la proporción */
+  object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+}
+
+/* Contenedor para las palabras de bienvenida */
+.welcome-container {
+  text-align: center; /* Centra las palabras horizontalmente */
+  position: relative;
+  top: -350px; /* Añade espacio entre la imagen y el texto */
+  color: #333; /* Color del texto (ajústalo según el diseño) */
+}
+
+/* Estilos para las palabras grandes */
+.welcome-text {
+  font-size: 5rem; /* Tamaño mucho más grande para las palabras */
+  font-weight: 900; /* Hace el texto más grueso */
+  font-family: 'Grandstander', sans-serif; /* Fuente personalizada */
+  margin: 15px 0; /* Aumenta el espacio entre palabras */
+  text-transform: uppercase; /* Convierte las palabras en mayúsculas */
+  color: #000000; /* Cambia el color de las palabras */
+  letter-spacing: 2px; /* Espaciado entre letras para mayor impacto */
+}

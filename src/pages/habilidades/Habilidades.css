@@ -1,0 +1,83 @@
+/* Contenedor principal */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Fondo claro y moderno */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tarjeta */
+.skills-card {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 30px 40px;
+    max-width: 750px; /* Mayor ancho */
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.skills-card:hover {
+    transform: translateY(-5px); /* Sutil movimiento hacia arriba */
+}
+
+/* Título */
+.skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Grandstander', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Introducción */
+.skills-intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #34495e;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify; /* Alineación justificada */
+}
+
+/* Lista de habilidades */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista */
+.skills-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #2c3e50;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    padding-bottom: 10px;
+}
+
+/* Íconos */
+.skill-icon {
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        border-radius: 10px; /* Bordes suaves */
+        object-fit: cover; /* Ajusta la imagen al tamaño */
+    }
+    
+}
+
+/* Texto de habilidades */
+.skills-list span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2c3e50;
+}

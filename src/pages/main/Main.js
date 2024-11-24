@@ -11,7 +11,7 @@ const Main = () => {
     const [cleanDataDetail, setcleanDataDetail] = useState([])
       
     useEffect(() => {
-        LoaderAllItems(setcleanDataDetail, url, id)
+       // LoaderAllItems(setcleanDataDetail, url, id)
     }, [id, url, setcleanDataDetail])
 
 

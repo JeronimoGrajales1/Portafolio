@@ -1,0 +1,61 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Fondo suave */
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    text-align: center;
+    width: 300px; /* Ancho de la tarjeta */
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Color del título */
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #666; /* Color del texto de la descripción */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 70px; /* Tamaño de los iconos */
+    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 2px solid transparent;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: #f0f0f0;
+    border: 2px solid #3b5998;
+}

@@ -1,0 +1,57 @@
+/* Contenedor general */
+.card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    z-index: 1;
+}
+
+/* Estilo de la tarjeta */
+.card {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 30px; /* Espaciado interno */
+    max-width: 600px; /* Ancho máximo */
+    text-align: center; /* Centra el texto */
+}
+
+/* Título de la tarjeta */
+.card-title {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+    font-family: 'Grandstander', sans-serif; /* Fuente personalizada */
+}
+
+/* Texto dentro de la tarjeta */
+.card-text {
+    font-size: 1.2rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    color: #555; /* Color ligeramente más claro */
+    font-family: 'Source Sans Pro', sans-serif; /* Fuente secundaria */
+}
+
+/* Texto en negrita */
+.card-text strong {
+    color: #000000be; /* Destaca el texto clave con un color diferente */
+    font-weight: bold;
+}
